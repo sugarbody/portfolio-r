@@ -19,6 +19,7 @@ import {
   Cloud,
   Globe,
   Smartphone,
+  Phone,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -155,7 +156,7 @@ export default function Portfolio() {
       <Header activeSection={activeSection} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <main className="relative z-10">
         <HeroSection />
-        <FeaturedProjectSection />
+        {/* <FeaturedProjectSection /> */}
         <SkillsSection />
         <ProjectsSection />
         <ResumeSection />
@@ -377,7 +378,7 @@ function HeroSection() {
               }}
               className="text-2xl md:text-3xl text-gray-300 mb-6"
             >
-              <span className="text-primary">Senior Software</span> Engineer
+              <span className="text-primary">AI/ML (Gen AI, LLM, NLP)</span> Engineer
             </motion.h2>
             <motion.p
               variants={{
@@ -386,8 +387,7 @@ function HeroSection() {
               }}
               className="text-gray-300 mb-8 max-w-lg text-lg"
             >
-              Results-driven Senior Software Engineer with over 10 years of hands-on experience building scalable,
-              maintainable, and secure software systems across startups and enterprise environments.
+              Senior AI/ML Engineer with 10+ years of hands-on experience in Machine Learning, NLP, and Generative AI including designing ML systems, building scalable Python APIs, and deploying models and agents with robust MLOps pipelines.
             </motion.p>
             <motion.div
               variants={{
@@ -459,7 +459,7 @@ function HeroSection() {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ repeat: Number.POSITIVE_INFINITY, duration: 4 }}
               >
-                <span className="font-medium">Full Stack Developer</span>
+                <span className="font-medium">AI/ML Engineer</span>
               </motion.div>
             </div>
           </motion.div>
@@ -652,85 +652,144 @@ function SkillsSection() {
       title: "Languages & Frameworks",
       icon: <Code size={28} />,
       skills: [
+        "Python (Flask, Django)",
+        "Java",
         "JavaScript (ES6+)",
         "TypeScript",
-        "Python (Flask, Django)",
+        "SQL",
         "Golang",
         "PHP (Laravel)",
-        "Java",
-        "C#",
-        "Kotlin",
-        "Spring Boot",
         "React.js",
         "React Native",
-        "Next.js",
-        "Vue.js",
-        "Angular 2+",
         "Node.js",
-        "Express.js",
-        "NestJS",
       ],
     },
     {
-      title: "Front-End & UI",
+      title: "Machine Learning & Deep Learning",
       icon: <Monitor size={28} />,
       skills: [
-        "Redux",
-        "RxJS",
-        "Tailwind CSS",
-        "SCSS",
-        "Material-UI",
-        "Ant Design",
-        "Shadcn UI",
-        "D3.js",
-        "Highcharts",
-        "Three.js",
-        "Figma",
-        "Bootstrap",
-        "BEM",
-        "SEO",
-        "Responsive Design",
-        "Socket.io",
+        "TensorFlow",
+        "PyTorch",
+        "Scikit-learn",
+        "Keras",
+        "XGBoost",
+        "LightGBM",
+        "CatBoost",
+        "H2O.ai",
+        "CNN",
+        "RNN",
+        "LSTM",
+        "Transformers",
+        "GANs",
+        "OpenAI gym",
+        "CrewAI",
+        "Autogen",
+        "Foundation Models(DALLE, CLIP, Stable Diffusion)"
+      ],
+    },
+    {
+      title: "Natural Language Processing & LLMs",
+      icon: <Monitor size={28} />,
+      skills: [
+        "GPT-4",
+        "GPT-3.5",
+        "BERT",
+        "RoBERTa",
+        "T5",
+        "FLAN-T5",
+        "LLaMA",
+        "MPT",
+        "Falcon",
+        "Sentence Transformers",
+        "Hugging Face Transformers",
+        "LangChain",
+        "Langgraph",
+        "LlamaIndex",
+        "SpaCy",
+        "NLTK",
+        "Word2Vec",
+        "GloVe",
+        "FastText"
+      ],
+    },
+    {
+      title: "Generative AI & RAG Pipelines",
+      icon: <Monitor size={28} />,
+      skills: [
+        "LangChain",
+        "Agentic Workflows",
+        "Ollama",
+        "Prompt Engineering",
+        "Function Calling",
+        "Tool Use",
+        "Multi-Agent Systems",
+        "Chain-of-Thought Reasoning",
+        "Knowledge Graphs",
+        "Fine-tuning (QLoRA, LoRA, PEFT)",
+        "Retrieval-Augmented Generation (RAG)"
+      ],
+    },
+    {
+      title: "Model Evaluation & Explainability",
+      icon: <Database size={28} />,
+      skills: ["SHAP", "LIME", "Captum", "What-If Tool", "Fairness Indicators", "CrossValidation", "A/B Testing"],
+    },
+    {
+      title: "Vector Databases & Search",
+      icon: <Database size={28} />,
+      skills: ["Pinecone", "Weaviate", "Milvus", "FAISS", "ElasticSearch", "Azure Cognitive Search", "Google Matching Engine"],
+    },
+    {
+      title: "Data Engineering & Big Data",
+      icon: <Database size={28} />,
+      skills: ["Apache Spark", "Databricks", "Hadoop", "Kafka", "Flink", "Dask", "Hive", "HDFS"],
+    },
+    {
+      title: "Databases & Storage",
+      icon: <Database size={28} />,
+      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "AWS RDS", "DynamoDB"],
+    },
+    {
+      title: "MLOps & Cloud",
+      icon: <Cloud size={28} />,
+      skills: [
+        "Docker",
+        "Kubernetes",
+        "MLflow",
+        "Airflow",
+        "Kubeflow",
+        "GitHub Actions",
+        "AWS (SageMaker,Lambda, Bedrock, Comprehend, Transcribe, Glue, S3, Step, SNS, SQA, etc.)",
+        "GCP",
+        "Runpod",
+        "Terraform",
+        "Saalad Cloud"
       ],
     },
     {
       title: "Back-End & APIs",
       icon: <Server size={28} />,
-      skills: ["RESTful APIs", "GraphQL", "WebSockets", "OAuth2", "JWT", "Firebase"],
+      skills: ["FastAPI", "Flask", "Django", "RESTful APIs", "GraphQL", "WebSockets", "JWT", "Firebase"],
     },
     {
-      title: "Database",
-      icon: <Database size={28} />,
-      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "AWS RDS", "DynamoDB"],
-    },
-    {
-      title: "DevOps & Cloud",
-      icon: <Cloud size={28} />,
-      skills: [
-        "AWS (EC2, S3, CloudWatch, Lambda)",
-        "GCP",
-        "Azure",
-        "Docker",
-        "Kubernetes",
-        "Jenkins",
-        "GitHub Actions",
-        "CI/CD pipelines",
-      ],
-    },
-    {
-      title: "Testing",
+      title: "Data Processing & Feature Engineering",
       icon: <Layers size={28} />,
-      skills: ["Jest", "Cypress", "Enzyme", "Puppeteer", "Selenium", "Playwright", "Cucumber", "Jasmine"],
+      skills: ["Pandas", "NumPy", "OpenCV", "FeatureTools", "Synthetic Data Generation"],
     },
     {
-      title: "Architecture & Patterns",
+      title: "AutoML & Tuning",
       icon: <Globe size={28} />,
-      skills: ["Microservices", "Serverless", "SOLID Principles", "CQRS", "Event-Driven Architecture"],
+      skills: ["Google AutoML", "Azure AutoML", "AutoKeras", "H2O AutoML", "TPOT", "Optuna", "Ray Tune", "GridSearchCV"],
     },
     {
-      title: "SDLC Tools",
+      title: "Dev Tools & IDEs",
+      icon: <Globe size={28} />,
+      skills: ["Jupyter", "VS Code", "PyCharm", "RStudio", "Colab", "Git", "GitHub", "Bitbucket"],
+    },
+    {
+      title: "Expertise",
       icon: <Smartphone size={28} />,
-      skills: ["Jira", "Trello", "Notion", "Asana", "Scrum", "Kanban", "Agile", "Waterfall"],
+      skills: ["LLM Infrastructure", "Backend API Development", "Hybrid Cloud-Edge MLOps", "DRL", "CV/NLP Systems", "GenAI/Agentic AI product"],
     },
   ]
 
@@ -744,7 +803,7 @@ function SkillsSection() {
 
       <SectionTitle
         title="Technical Skills"
-        subtitle="Expert in full-stack development, with a strong command of modern JavaScript frameworks, cloud infrastructure, API architecture, and database performance tuning."
+        subtitle="Expert in artificial intelligence, machine learning, and full stack development, with a proven track record of delivering scalable, cloud-native solutions using modern JavaScript frameworks, robust API architecture, and high-performance database systems."
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -790,40 +849,49 @@ function SkillsSection() {
 function ProjectsSection() {
   const projects = [
     {
-      title: "Edu Code Share Platform (CodeTribe)",
+      title: "Calorie App: AI-Powered Calorie Estimation from Food Images",
       description:
-        "Designed and delivered a Code Share Platform for multiple clients in the education industry using Next.js, Nest.js, GraphQL, Redis, SocketIO and PostgreSQL, leading to a 60% faster deployment cycle across teams.",
-      image: "/codetribe-homepage.jpeg",
-      tags: ["Next.js", "Nest.js", "GraphQL", "Redis", "PostgreSQL", "Docker", "Kubernetes", "AWS", "CI/CD", "Socket.io"],
-      github: "https://github.com/accompany1205/edu-code-share.git",
-      live: "https://codetribe.com/",
+        "CalorieAI is an AI-powered app that estimates the calories of food from images using state-of-the-art vision-language models and Retrieval-Augmented Generation (RAG). Built on top of the Food-101 dataset, this project combines deep learning, LLMs, and nutritional science into a complete end-to-end pipeline.",
+      // image: "/codetribe-homepage.jpeg",
+      tags: [],
+      github: "https://github.com/MoizAhmed2517/Calorie-App",
+      // live: "https://codetribe.com/",
     },
     {
-      title: "Employee Task Management System",
+      title: "Football Tracking with YOLOv11",
       description:
-        "Modernized a legacy employee task management system by migrating from class-based to functional React components and adopting Hooks, reducing maintenance overhead by 60%.",
-      image: "/taskflow-website.png",
-      tags: ["React", "Next.js", "Golang", "GraphQL", "Accessibility", "Flask", "Redis", "PostgreSQL", "Celery", "Docker", "Kubernetes", "AWS", "CI/CD", "Socket.io"],
-      github: "https://github.com/accompany1205/taskflow-frontend.git",
-      live: "https://taskflow-frontend-lyart.vercel.app/",
+        "This project leverages YOLOv11 to track football, players, goalkeepers, referees, and classify players from two different teams. The system assigns unique tracking IDs to each player to maintain consistency across frames.",
+      // image: "/taskflow-website.png",
+      tags: [],
+      github: "https://github.com/MoizAhmed2517/Football---Ball-Tracking-and-Analysis",
+      // live: "https://taskflow-frontend-lyart.vercel.app/",
     },
     {
-      title: "Zolina Hair Holistic Beauty",
+      title: "RecruitMate",
       description:
-        "Zolina Hair Holistic Beauty is a website for a hair salon that offers a range of services from haircuts to hair extensions.",
-      image: "/zolina-hair.png",
-      tags: ["D3.js", "Highcharts", "React", "Next.js", "Tailwind CSS", "Fresha", "Stripe", "AWS", "CI/CD", "Socket.io"],
-      github: "https://github.com/accompany1205/zolinar-hair.git",
-      live: "https://v0-zolina-hair.vercel.app",
+        "RecruitMate is an AI-powered recruitment agent that automates the process of screening, evaluating, and ranking candidates based on a provided Job Description (JD). It also facilitates interview scheduling and communication.",
+      // image: "/zolina-hair.png",
+      tags: [],
+      github: "https://github.com/MoizAhmed2517/Recruitemate",
+      // live: "https://v0-zolina-hair.vercel.app",
     },
     {
-      title: "Meine Tora",
+      title: "Speed Estimation of Vehicles ",
       description:
-        "On this website you will find the books of the series 'The Weekly Torah Portions' as well as video shiurim by children for children. Built with Next.js, Tailwind CSS, TypeScript, and Flask.",
-      image: "/meine-tora.png",
-      tags: ["React", "Next.js", "Tailwind CSS", "TypeScript", "Flask", "PostgreSQL", "Docker", "Kubernetes", "AWS", "CI/CD", "Socket.io"],
-      github: "https://github.com/accompany1205/meine-tora.git/private",
-      live: "https://www.meine-tora.de/",
+        "This project utilizes YOLOv8 for object detection and tracking to estimate the speed of vehicles in real-time. The system identifies and tracks vehicles across frames and calculates their speed based on the displacement over time.",
+      // image: "/meine-tora.png",
+      tags: [],
+      github: "https://github.com/MoizAhmed2517/Time-Series-Forecasting-Projects",
+      // live: "https://www.meine-tora.de/",
+    },
+    {
+      title: "Movie_Recommender_System",
+      description:
+        "Movie_Recommender_System",
+      // image: "/meine-tora.png",
+      tags: [],
+      github: "https://github.com/MoizAhmed2517/Speed-Estimation",
+      // live: "https://www.meine-tora.de/",
     },
   ]
 
@@ -835,7 +903,7 @@ function ProjectsSection() {
 
       <SectionTitle
         title="My Projects"
-        subtitle="Proven ability to lead cross-functional teams, deliver critical systems under tight deadlines, and translate complex business requirements into technical solutions."
+        subtitle="Only Personal"
       />
 
       <div className="grid md:grid-cols-2 gap-10">
@@ -850,13 +918,13 @@ function ProjectsSection() {
             className="group"
           >
             <div className="bg-gradient-to-br from-gray-900 to-gray-950 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-gray-800/50 h-full flex flex-col">
-              <div className="relative h-56 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
-                <img
+              <div className="relative h-14 overflow-hidden">
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" /> */}
+                {/* <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+                /> */}
                 <div className="absolute top-4 right-4 z-20 flex gap-2">
                   <a
                     href={project.github}
@@ -866,14 +934,14 @@ function ProjectsSection() {
                   >
                     <Github size={18} />
                   </a>
-                  <a
+                  {/* <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-gray-900/80 p-2 rounded-full text-white hover:bg-primary transition-colors"
                   >
                     <ExternalLink size={18} />
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div className="p-6 flex flex-col flex-grow">
@@ -903,7 +971,7 @@ function ProjectsSection() {
                       GitHub
                     </a>
                   </Button>
-                  <Button
+                  {/* <Button
                     size="sm"
                     asChild
                     className="flex-1 bg-gradient-to-r from-primary to-blue-700 hover:from-primary/90 hover:to-blue-600"
@@ -917,7 +985,7 @@ function ProjectsSection() {
                       <ExternalLink size={16} />
                       Live Demo
                     </a>
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </div>
@@ -931,57 +999,69 @@ function ProjectsSection() {
 function ResumeSection() {
   const experiences = [
     {
-      role: "Senior Software Engineer",
-      company: "PixelFyre",
-      period: "Jun 2022 - Present",
+      role: "Senior Full Stack Machine Learning Engineer",
+      company: "Trace Machina",
+      period: "Sep 2023 - Present",
       description: [
-        "Designed and delivered a SaaS project management platform for multiple enterprise clients using React, React Native, Flask, GraphQL, and PostgreSQL, leading to a 60% faster deployment cycle across teams.",
-        "Built and enforced role-based access control (RBAC) at the API and UI layers to mitigate unauthorized data access, reducing internal security alerts by 75%.",
-        "Developed reusable React components with custom hooks and Context API, significantly lowering code duplication and decreasing bug resolution time by 40%.",
-        "Led AWS migration using EC2, S3, Route 53, and CloudWatch for infrastructure scaling and health checks, achieving 99.98% uptime and reducing hosting costs by 30%.",
+        "Architected and led the development of ECOps, a comprehensive AI training and deployment platform that supports data analysis, distributed model training across heterogeneous edge devices, cross-site model sharing, deployment, performance monitoring, and drift detection.",
+        "Achieved a 10% reduction in model training and deployment time and contributed to 8% improvement in energy efficiency across operational sites through automated retraining and optimized model rollout.",
+        "Designed and deployed scalable FastAPI microservices to serve LLM inference, including JWT-secured endpoints, async I/O, and streaming completions for long context responses.",
+        "Architected and maintained a modular RAG pipeline using LangChain, Pinecone, and custom retriever logic with metadata filters and hybrid search across vector + keyword indices.",
+        "Developed a monitoring dashboard using React + Tailwind + Next.js to visualize model performance, latency distribution, version tracking, and real-time token streaming.",
+        "Tuned vector database (Pinecone, FAISS) configurations using ANN and quantization techniques, achieving 25–35% latency reduction and improved semantic recall.",
+        "Integrated observability with Grafana and Prometheus to track retrieval latency, embedding drift, and vector store query health.",
+        "Led MLOps workflows in Databricks and MLflow for the continuous training, evaluation, and production rollout of domain-specific models.",
+        "Employed prompt injection guards, fallback routing, and response throttling to ensure security and resilience of GenAI endpoints under load.",
+        "Automated test suites using Pytest and integrated model evaluation metrics (BLEU, cosine similarity, groundedness checks) into CI pipelines."
+      ],
+    },
+    {
+      role: "Senior Machine Learning Engineer",
+      company: "Amazon",
+      period: "Aug 2021 – Sep 2023",
+      description: [
+        "Redesign AI methdology from machine learning to Deep Reinforcement Learning (DRL) using PPO that results in additional 10% savings in energy for buildings.",
+        "Developed a Gen AI-based chatbot feature, fine-tune the Qwen/QwQ-32B model for voice and chat assistance related to building's HVAC behavior and fault diagnositics this results in boosting sales by 13%.",
+        "Designed a hybrid MLOps solution using AWS services, enabling initial training on SageMaker and subsequent training on Jetson Nano edge devices resulting in reduce release cycle time by 30% and site visits by 40%.",
+        "Implemented a feedback system using AWS SageMaker for continuous model performance monitoring and retraining, ensuring sustained model accuracy and this results in additional energy saving of 4.5% due to accurate predictions.",
+        "Designed and managed scalable FastAPI-based ML model APIs with JWT authentication and integrated Redis caching, ensuring secure and low-latency inference pipelines.",
+        "Architected MLOps workflows using MLflow, SageMaker to support model registry, drift detection, automated retraining, and continuous deployment on AWS ECS.",
+        "Led the development of a React monitoring dashboard to visualize model versions, metrics, drift thresholds, and real-time alerts.",
+        "Optimized the deployment lifecycle by 30% through templated Helm stacks, GitHub Actions CI/CD pipelines, and Dockerized GenAI microservices.",
+        "Integrated RAG-based LLM endpoints using LangChain and Pinecone for retrieval-augmented medical diagnostics, reducing the average patient triage time by 20%."
       ],
     },
     {
       role: "Senior Software Engineer",
-      company: "Meta",
-      period: "Mar 2020 - May 2022",
+      company: "Zammo.ai",
+      period: "ul 2017 – Aug 2019",
       description: [
-        "Modernized a legacy employee task management system by migrating from class-based to functional React components and adopting Hooks, reducing maintenance overhead by 60%.",
-        "Built performant GraphQL APIs in Golang, reducing task load latency from 1.3s to 400ms across 15+ internal microservices.",
-        "Refined global state architecture using Redux Toolkit and Context, enabling easier scalability and improving DX (developer experience).",
-        "Translated Figma designs into highly responsive UIs with accessibility standards, achieving 100% Lighthouse accessibility across core views.",
-      ],
-    },
-    {
-      role: "Senior Software Engineer",
-      company: "Emergent Software",
-      period: "Jul 2017 - Feb 2020",
-      description: [
-        "Designed interactive dashboards and visualizations using D3.js and Highcharts, helping clients track KPIs across datasets of over 1M rows in real time.",
-        "Built full-stack SPAs using React, Next.js, Django, and Tailwind CSS, optimized for both mobile and desktop views with SSR and code-splitting.",
-        "Delivered secure blockchain-based health data exchange system, ensuring HIPAA compliance and reducing verification time by 40%.",
-        "Implemented Snapshot testing with Jest/Enzyme, preventing regressions in complex UIs and saving 10+ hours per month in QA cycles.",
+        "Implemented MLOps pipeline for soil detection model, including a monitoring loop, staging and production account, saved 9 hours/month by minimizing downtime and automating retraining.",
+        "Led the development of a motor bearing failure prediction system, achieving a 3.67% reduction in downtime through anomaly detection techniques.",
+        "Streamlined CI/CD and ETL processes, enhancing data management and feature engineering, yielding a monthly savings of 10 hours.",
+        "Engineered a solar GHI forecasting feature, resulting in daily savings of PKR 0.5 million via next-day operations.",
+        "Accomplished cost savings of 156,429 PKR/MW/Month using a LSTM to predict cleaning routines and detect soiled panels.",
+        "Reduced training time by 52% with detailed technical documentation and product demos for new customers and sales/marketing teams."
       ],
     },
     {
       role: "Software Engineer",
-      company: "Accenture",
-      period: "Jul 2014 - Jun 2017",
+      company: "Turn Hatch",
+      period: "Jan 2016 – Jun 2017",
       description: [
-        "Developed cross-platform mobile apps with React Native, Redux, and Flex Layout, delivering seamless performance across Android and iOS.",
-        "Contributed to high-availability Django microservices handling real-time logistics and payment transactions, processing 10K+ events/second with 99.9% accuracy.",
-        "Built a feature-rich internal dashboard for a financial client using Laravel, PHP, and React, integrating role-based modules with granular permissions.",
-        "Delivered robust APIs for account management and user authentication, reducing login and session-related support tickets by 50%.",
+        "Conducted competitive pricing analysis and data-backed bidding strategies for 5 solar energy projects, successfully securing contracts under market rates with a maintained profit margin of 2.8%.",
+        "Identified inefficiencies in energy consumption patterns by leading comprehensive energy audits, driving a 10% cost reduction through data-driven insights and actionable recommendations.",
+        "Delivered high-impact energy analyses that supported the optimal design of large-scale utility solar PV plants, contributing to an annual performance ratio of 83% through advanced data modeling and simulation tools."
       ],
     },
   ]
 
   const education = [
     {
-      degree: "B.S. in Computer Science",
-      institution: "The University of Texas at Austin",
-      period: "Aug 2008 - May 2012",
-      description: "Graduated with a focus on software engineering and web technologies.",
+      degree: "Bachelor's Degree in Computer Science",
+      institution: "Rutgers University–New Brunswick",
+      period: "Aug 2012 - May 2016",
+      description: "Graduated with a focus on artificial intelligence and web technologies.",
     },
   ]
 
@@ -1077,23 +1157,23 @@ function ResumeSection() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-primary mr-2 mt-1">•</span>
-                <span className="text-gray-300">Reduced hosting costs by 30% through AWS migration</span>
+                <span className="text-gray-300">Cut model training/deployment time by 10% with ECOps platform.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-2 mt-1">•</span>
-                <span className="text-gray-300">Improved API performance by 70% across microservices</span>
+                <span className="text-gray-300">Boosted energy efficiency by 8% at operational sites.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-2 mt-1">•</span>
-                <span className="text-gray-300">Achieved 100% Lighthouse accessibility scores</span>
+                <span className="text-gray-300">Slashed vector DB latency by 25–35% via optimization.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-2 mt-1">•</span>
-                <span className="text-gray-300">Mentored junior developers to promotion</span>
+                <span className="text-gray-300">Saved 10% more building energy using deep reinforcement learning.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mr-2 mt-1">•</span>
-                <span className="text-gray-300">Implemented CI/CD pipelines reducing deployment time by 83%</span>
+                <span className="text-gray-300">Increased sales by 13% with a GenAI chatbot.</span>
               </li>
             </ul>
           </motion.div>
@@ -1171,6 +1251,28 @@ function ContactSection() {
             <motion.div
               variants={{
                 hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.1 } },
+              }}
+              whileHover={{ x: 5, transition: { duration: 0.2 } }}
+              className="flex items-start gap-4 group"
+            >
+              <div className="bg-gradient-to-br from-primary/20 to-blue-600/20 p-3 rounded-full text-primary group-hover:text-white group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-blue-600 transition-all">
+                <Phone size={24} />
+              </div>
+              <div>
+                <h4 className="font-medium mb-1 text-white">Phone</h4>
+                <a
+                  href="mailto:moizahmed.swe@gmail.com"
+                  className="text-gray-300 hover:text-primary transition-colors"
+                >
+                  +1 ‪(512) 595-3050‬
+                </a>
+              </div>
+            </motion.div>
+
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } },
               }}
               whileHover={{ x: 5, transition: { duration: 0.2 } }}
@@ -1222,16 +1324,10 @@ function ContactSection() {
               <span className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-primary to-blue-600 w-full"></span>
             </h4>
             <p className="text-gray-300 leading-relaxed">
-              Results-driven Senior Software Engineer with over 10 years of hands-on experience building scalable,
-              maintainable, and secure software systems across startups and enterprise environments. Expert in
-              full-stack development, with a strong command of modern JavaScript frameworks, cloud infrastructure, API
-              architecture, and database performance tuning.
+              Senior AI/ML Engineer with 10+ years of hands-on experience in Machine Learning, NLP, and Generative AI including designing ML systems, building scalable Python APIs, and deploying models and agents with robust MLOps pipelines. Combines deep AI infrastructure knowledge with full-stack capabilities to support cross-functional AI teams. Skilled in backend systems using FastAPI and Flask, and frontend dashboards using React, Tailwind, and Next.js for real-time model feedback. 
             </p>
             <p className="text-gray-300 leading-relaxed mt-4">
-              Proven ability to lead cross-functional teams, deliver critical systems under tight deadlines, and
-              translate complex business requirements into technical solutions that drive measurable impact. Recognized
-              for engineering excellence, clean code practices, and mentoring developers toward growth and technical
-              maturity.
+              Proven success in leading model lifecycle automation, edge deployment, and cloud-native GenAI infrastructure. Strong collaborator with cross-functional teams, product stakeholders, and engineering leaders. Trusted technical advisor with success in delivering production-ready AI solutions that accelerate business innovation and reduce time-to-market.
             </p>
           </motion.div>
         </motion.div>
