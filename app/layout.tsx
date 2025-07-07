@@ -5,7 +5,7 @@ import { icons } from "lucide-react"
 
 export const metadata = {
   title: "Moiz Ahmed | Software Developer",
-  description: "Professional portfolio of Moiz Ahmed, a software developer specializing in web development.",
+  description: "Professional portfolio of Moiz Ahmed, a software developer specializing in AI/ML development.",
   icons: {
     icon: "/favicon.png",
   },
