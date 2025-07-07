@@ -1265,7 +1265,7 @@ function ContactSection() {
                   href="mailto:moizahmed.swe@gmail.com"
                   className="text-gray-300 hover:text-primary transition-colors"
                 >
-                  +1 ‪(512) 595-3050‬
+                  +1 ‪(917) 730-8520‬
                 </a>
               </div>
             </motion.div>
