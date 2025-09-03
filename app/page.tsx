@@ -369,7 +369,7 @@ function HeroSection() {
               }}
               className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400"
             >
-              Moiz Ahmed
+              Ryan Salah
             </motion.h1>
             <motion.h2
               variants={{
@@ -387,7 +387,7 @@ function HeroSection() {
               }}
               className="text-gray-300 mb-8 max-w-lg text-lg"
             >
-              Senior AI/ML Engineer with 10+ years of hands-on experience in Machine Learning, NLP, and Generative AI including designing ML systems, building scalable Python APIs, and deploying models and agents with robust MLOps pipelines.
+              AI and ML Professional with 9+ years of hands-on experience in Machine Learning, NLP, and Generative AI including designing ML systems, building scalable Python APIs, and deploying models and agents with robust MLOps pipelines.
             </motion.p>
             <motion.div
               variants={{
@@ -439,7 +439,7 @@ function HeroSection() {
                 <div className="w-full h-full rounded-full overflow-hidden backdrop-blur-sm">
                   <img
                     src="/avatar.png"
-                    alt="Moiz Ahmed"
+                    alt="Ryan Salah"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -451,7 +451,7 @@ function HeroSection() {
                 animate={{ y: [0, -10, 0] }}
                 transition={{ repeat: Number.POSITIVE_INFINITY, duration: 3 }}
               >
-                <span className="font-medium">10+ Years Experience</span>
+                <span className="font-medium">9+ Years Experience</span>
               </motion.div>
 
               <motion.div
@@ -849,48 +849,76 @@ function SkillsSection() {
 function ProjectsSection() {
   const projects = [
     {
-      title: "Calorie App: AI-Powered Calorie Estimation from Food Images",
+      title: "Enterprise RAG Intelligence Platform",
       description:
-        "CalorieAI is an AI-powered app that estimates the calories of food from images using state-of-the-art vision-language models and Retrieval-Augmented Generation (RAG). Built on top of the Food-101 dataset, this project combines deep learning, LLMs, and nutritional science into a complete end-to-end pipeline.",
+        "Developed a comprehensive Retrieval-Augmented Generation (RAG) system for processing structured and unstructured enterprise data, including PDFs, Word documents, and databases, with advanced features like multi-modal data ingestion, vector embeddings, hybrid search, and intelligent chunking strategies. Integrated multiple LLM backends (GPT-4, Claude, Llama) for dynamic model selection and optimized query responses, while implementing advanced prompt engineering and building an enterprise-grade API with real-time analytics for operational monitoring.",
       // image: "/codetribe-homepage.jpeg",
-      tags: [],
-      github: "https://github.com/MoizAhmed2517/Calorie-App",
+      // tags: [],
+      tags: ["Python", "LangChain", "ChromaDB", "FastAPI", "Transformers"],
+      // github: "https://github.com/MoizAhmed2517/Calorie-App",
       // live: "https://codetribe.com/",
     },
     {
-      title: "Football Tracking with YOLOv11",
+      title: "WellB - AI-Powered Hotel Management System",
       description:
-        "This project leverages YOLOv11 to track football, players, goalkeepers, referees, and classify players from two different teams. The system assigns unique tracking IDs to each player to maintain consistency across frames.",
+        "Developed the AI chatbot WellB using a RAG pipeline with Llama and DeepSeek models, integrated with OpenAI GPT for enhanced conversations. Implemented a multi-model hotel booking system, real-time emergency alert notifications, AI-driven contact management, and booking conflict resolution. Optimized the platform with local and cloud-based model orchestration for efficiency and cost-effectiveness.",
       // image: "/taskflow-website.png",
-      tags: [],
-      github: "https://github.com/MoizAhmed2517/Football---Ball-Tracking-and-Analysis",
+      tags: ["RAG", "Llama", "OpenAI"],
+      // github: "https://github.com/MoizAhmed2517/Football---Ball-Tracking-and-Analysis",
       // live: "https://taskflow-frontend-lyart.vercel.app/",
     },
     {
-      title: "RecruitMate",
+      title: "IntelliReport - AI-Powered Report Generation ",
       description:
-        "RecruitMate is an AI-powered recruitment agent that automates the process of screening, evaluating, and ranking candidates based on a provided Job Description (JD). It also facilitates interview scheduling and communication.",
+        "Developed an AI-powered report generation system with automated text correction, topic extraction, and intelligent summarization using BERT and transformer models. Created features like topic-wise summaries, smart text highlighting, and multi-format report generation, while building a scalable API for batch processing and real-time tracking. Integrated an analytics dashboard for performance insights and continuous system optimization.",
       // image: "/zolina-hair.png",
-      tags: [],
-      github: "https://github.com/MoizAhmed2517/Recruitemate",
+      tags: ["Python", "NLP", "Transformers", "FastAPI"],
+      // github: "https://github.com/MoizAhmed2517/Recruitemate",
       // live: "https://v0-zolina-hair.vercel.app",
     },
     {
-      title: "Speed Estimation of Vehicles ",
+      title: "Smart Media Monitoring Application",
       description:
-        "This project utilizes YOLOv8 for object detection and tracking to estimate the speed of vehicles in real-time. The system identifies and tracks vehicles across frames and calculates their speed based on the displacement over time.",
+        "Led a media monitoring project using AI models for Speech to Text, sentiment analysis, summary generation, topic modeling, facial recognition, and OCR, working with both Urdu and English datasets. Developed solutions for real-time sentiment tracking, content summarization, and multi-language OCR, while integrating a YouTube Vlogger Scraper for content and audience insights.",
       // image: "/meine-tora.png",
-      tags: [],
-      github: "https://github.com/MoizAhmed2517/Time-Series-Forecasting-Projects",
+      tags: ["Python", "PyTorch"],
+      // github: "https://github.com/MoizAhmed2517/Time-Series-Forecasting-Projects",
       // live: "https://www.meine-tora.de/",
     },
     {
-      title: "Movie_Recommender_System",
+      title: "Interview Process Automation",
       description:
-        "Movie_Recommender_System",
+        "Led the Interview Process Automation project, developing AI modules for face and voice consistency verification, communication skill rating, and emotion recognition, ensuring accurate candidate assessment and interview integrity.",
       // image: "/meine-tora.png",
-      tags: [],
-      github: "https://github.com/MoizAhmed2517/Speed-Estimation",
+      tags: ["Python", "PyTorch", "FastAPI"],
+      // github: "https://github.com/MoizAhmed2517/Speed-Estimation",
+      // live: "https://www.meine-tora.de/",
+    },
+    {
+      title: "AAQAB Project",
+      description:
+        "Led the AAQAB Project, utilizing YOLO and ResNet for object detection in satellite imagery, focusing on large image processing, accurate object counting, and PRSS image pipeline development. Automated data preprocessing, report generation, and YAML configuration for efficient model training, while optimizing performance with GPU acceleration and memory techniques.",
+      // image: "/meine-tora.png",
+      tags: ["Python", "PyTorch", "Yolo"],
+      // github: "https://github.com/MoizAhmed2517/Speed-Estimation",
+      // live: "https://www.meine-tora.de/",
+    },
+    {
+      title: "Crowd Counting Automation",
+      description:
+        "Contributed to a crowd counting project using computer vision techniques to accurately count people in densely populated areas, focusing on density estimation, occlusion handling, and real-time processing for efficient large-scale implementation.",
+      // image: "/meine-tora.png",
+      tags: ["Python", "PyTorch"],
+      // github: "https://github.com/MoizAhmed2517/Speed-Estimation",
+      // live: "https://www.meine-tora.de/",
+    },
+    {
+      title: "Smart Meter Reader",
+      description:
+        "Designed and developed the Smart Meter Reader to automate utility meter readings using computer vision and deep learning, with ROI detection, reading extraction, and Android app integration for remote and scalable usage.",
+      // image: "/meine-tora.png",
+      tags: ["Python", "FastAPI", "PyTorch", "Android"],
+      // github: "https://github.com/MoizAhmed2517/Speed-Estimation",
       // live: "https://www.meine-tora.de/",
     },
   ]
@@ -903,7 +931,7 @@ function ProjectsSection() {
 
       <SectionTitle
         title="My Projects"
-        subtitle="Only Personal"
+        subtitle=""
       />
 
       <div className="grid md:grid-cols-2 gap-10">
@@ -999,59 +1027,51 @@ function ProjectsSection() {
 function ResumeSection() {
   const experiences = [
     {
-      role: "Senior Full Stack Machine Learning Engineer",
-      company: "Trace Machina",
-      period: "Sep 2023 - Present",
+      role: "AI Team Lead",
+      company: "US AI",
+      period: "May 2023 - Present",
       description: [
-        "Architected and led the development of ECOps, a comprehensive AI training and deployment platform that supports data analysis, distributed model training across heterogeneous edge devices, cross-site model sharing, deployment, performance monitoring, and drift detection.",
-        "Achieved a 10% reduction in model training and deployment time and contributed to 8% improvement in energy efficiency across operational sites through automated retraining and optimized model rollout.",
-        "Designed and deployed scalable FastAPI microservices to serve LLM inference, including JWT-secured endpoints, async I/O, and streaming completions for long context responses.",
-        "Architected and maintained a modular RAG pipeline using LangChain, Pinecone, and custom retriever logic with metadata filters and hybrid search across vector + keyword indices.",
-        "Developed a monitoring dashboard using React + Tailwind + Next.js to visualize model performance, latency distribution, version tracking, and real-time token streaming.",
-        "Tuned vector database (Pinecone, FAISS) configurations using ANN and quantization techniques, achieving 25–35% latency reduction and improved semantic recall.",
-        "Integrated observability with Grafana and Prometheus to track retrieval latency, embedding drift, and vector store query health.",
-        "Led MLOps workflows in Databricks and MLflow for the continuous training, evaluation, and production rollout of domain-specific models.",
-        "Employed prompt injection guards, fallback routing, and response throttling to ensure security and resilience of GenAI endpoints under load.",
-        "Automated test suites using Pytest and integrated model evaluation metrics (BLEU, cosine similarity, groundedness checks) into CI pipelines."
+        "Led a team of machine learning professionals, providing strategic guidance and technical mentorship to drive innovative solutions and collaborative efforts across multiple AI domains.",
+        "Designed and developed advanced machine learning models for mission-critical applications, ensuring high performance and reliability with comprehensive testing and validation frameworks.",
+        "Created and optimized end-to-end model pipelines, streamlining data preprocessing and model deployment processes, improving operational efficiency by 40% through automated workflows.",
+        "Implemented custom training frameworks and fine-tuning strategies for transformer models, YOLO architectures, and computer vision models to achieve domain-specific performance improvements.",
+        "Spearheaded fine-tuning of large language models and vision transformers using transfer learning techniques, achieving significant accuracy improvements on specialized datasets and business-specific use cases.",
+        "Automated the annotation process through development of intelligent labeling systems and active learning frameworks, reducing manual annotation effort by 70% while maintaining data quality and consistency.",
+        "Championed the design of robust APIs and microservices architecture, enhancing product accessibility and ensuring seamless integration with external systems and platforms for scalable AI solutions.",
+        "Managed the successful deployment of machine learning solutions in production environments, optimizing real-time processing capabilities and reducing operational costs through efficient resource utilization.",
       ],
     },
     {
-      role: "Senior Machine Learning Engineer",
-      company: "Amazon",
-      period: "Aug 2021 – Sep 2023",
+      role: "Senior AI Engineer",
+      company: "Horizon Technology",
+      period: "Jun 2020 – Apr 2023",
       description: [
-        "Redesign AI methdology from machine learning to Deep Reinforcement Learning (DRL) using PPO that results in additional 10% savings in energy for buildings.",
-        "Developed a Gen AI-based chatbot feature, fine-tune the Qwen/QwQ-32B model for voice and chat assistance related to building's HVAC behavior and fault diagnositics this results in boosting sales by 13%.",
-        "Designed a hybrid MLOps solution using AWS services, enabling initial training on SageMaker and subsequent training on Jetson Nano edge devices resulting in reduce release cycle time by 30% and site visits by 40%.",
-        "Implemented a feedback system using AWS SageMaker for continuous model performance monitoring and retraining, ensuring sustained model accuracy and this results in additional energy saving of 4.5% due to accurate predictions.",
-        "Designed and managed scalable FastAPI-based ML model APIs with JWT authentication and integrated Redis caching, ensuring secure and low-latency inference pipelines.",
-        "Architected MLOps workflows using MLflow, SageMaker to support model registry, drift detection, automated retraining, and continuous deployment on AWS ECS.",
-        "Led the development of a React monitoring dashboard to visualize model versions, metrics, drift thresholds, and real-time alerts.",
-        "Optimized the deployment lifecycle by 30% through templated Helm stacks, GitHub Actions CI/CD pipelines, and Dockerized GenAI microservices.",
-        "Integrated RAG-based LLM endpoints using LangChain and Pinecone for retrieval-augmented medical diagnostics, reducing the average patient triage time by 20%."
+        "Served as a Senior AI Engineer, responsible for leading end-to-end machine learning projects while providing strategic guidance and mentorship to a dedicated team of professionals.",
+        "Managed and supervised data creation, preprocessing, model training, and deployment for a variety of applications, ensuring data quality and model effectiveness.",
+        "Oversaw extensive data handling, including data collection, cleaning, and annotation, to support the development of high-performing machine learning models.",
+        "Designed and implemented robust data preprocessing pipelines, optimizing feature extraction and data augmentation techniques for enhanced model performance.",
+        "Led the fine-tuning and optimization of models, with a particular focus on object detection, resulting in improved object recognition and tracking.",
+        "Managed the deployment of machine learning solutions in production environments, collaborating cross-functionally to guarantee seamless integration and real-time processing."
       ],
     },
     {
-      role: "Senior Software Engineer",
-      company: "Zammo.ai",
-      period: "ul 2017 – Aug 2019",
+      role: "Mid-level ML Developer",
+      company: "Aimfox IT Solutions",
+      period: "Jul 2019 – Mar 2020",
       description: [
-        "Implemented MLOps pipeline for soil detection model, including a monitoring loop, staging and production account, saved 9 hours/month by minimizing downtime and automating retraining.",
-        "Led the development of a motor bearing failure prediction system, achieving a 3.67% reduction in downtime through anomaly detection techniques.",
-        "Streamlined CI/CD and ETL processes, enhancing data management and feature engineering, yielding a monthly savings of 10 hours.",
-        "Engineered a solar GHI forecasting feature, resulting in daily savings of PKR 0.5 million via next-day operations.",
-        "Accomplished cost savings of 156,429 PKR/MW/Month using a LSTM to predict cleaning routines and detect soiled panels.",
-        "Reduced training time by 52% with detailed technical documentation and product demos for new customers and sales/marketing teams."
+        "Responsible for developing and executing test plans, identifying defects, debugging issues, developing automated test scripts, and documenting the testing process to ensure that hardware or software products meet specified requirements and are free from defects.",
+        "Focused on strong analytical skills, attention to detail, and the ability to collaborate effectively with a team."
       ],
     },
     {
-      role: "Software Engineer",
-      company: "Turn Hatch",
-      period: "Jan 2016 – Jun 2017",
+      role: "Python Developer",
+      company: "CapitalOne",
+      period: "Aug 2017 – May 2019",
       description: [
-        "Conducted competitive pricing analysis and data-backed bidding strategies for 5 solar energy projects, successfully securing contracts under market rates with a maintained profit margin of 2.8%.",
-        "Identified inefficiencies in energy consumption patterns by leading comprehensive energy audits, driving a 10% cost reduction through data-driven insights and actionable recommendations.",
-        "Delivered high-impact energy analyses that supported the optimal design of large-scale utility solar PV plants, contributing to an annual performance ratio of 83% through advanced data modeling and simulation tools."
+        "Worked as a Python Developer, contributing to the development of software components with a focus on verification and high-level programming design.",
+        "Assisted in the creation of automated verification scripts and tools to streamline the testing and validation processes.",
+"Participated in code reviews to learn and improve software quality and coding practices.",
+"Contributed to the design and architecture of software systems, applying theoretical knowledge gained during education. Worked on algorithm implementation and data processing, applying problem-solving skills to real-world challenges."
       ],
     },
   ]
@@ -1059,8 +1079,8 @@ function ResumeSection() {
   const education = [
     {
       degree: "Bachelor's Degree in Computer Science",
-      institution: "Rutgers University–New Brunswick",
-      period: "Aug 2012 - May 2016",
+      institution: "University of Rochester",
+      period: "Aug 2013 - May 2017",
       description: "Graduated with a focus on artificial intelligence and web technologies.",
     },
   ]
@@ -1240,10 +1260,10 @@ function ContactSection() {
               <div>
                 <h4 className="font-medium mb-1 text-white">Email</h4>
                 <a
-                  href="mailto:moizahmed.swe@gmail.com"
+                  href="mailto:ryansalah53@gmail.com"
                   className="text-gray-300 hover:text-primary transition-colors"
                 >
-                  moizahmed.swe@gmail.com
+                  ryansalah53@gmail.com
                 </a>
               </div>
             </motion.div>
@@ -1262,10 +1282,10 @@ function ContactSection() {
               <div>
                 <h4 className="font-medium mb-1 text-white">Phone</h4>
                 <a
-                  href="mailto:moizahmed.swe@gmail.com"
+                  href="mailto:ryansalah53@gmail.com"
                   className="text-gray-300 hover:text-primary transition-colors"
                 >
-                  +1 ‪(917) 730-8520‬
+                  +1 ‪(530) 803-8154‬
                 </a>
               </div>
             </motion.div>
@@ -1283,7 +1303,7 @@ function ContactSection() {
               </div>
               <div>
                 <h4 className="font-medium mb-1 text-white">Location</h4>
-                <p className="text-gray-300">45 Park Ave, Iselin, NJ 08830</p>
+                <p className="text-gray-300">906 Southwick Dr, Towson, MD 21286 </p>
               </div>
             </motion.div>
 
@@ -1301,12 +1321,12 @@ function ContactSection() {
               <div>
                 <h4 className="font-medium mb-1 text-white">LinkedIn</h4>
                 <a
-                  href="https://www.linkedin.com/in/moiz-ahmed-b41799367"
+                  href="https://www.linkedin.com/in/ryan-salah-98b538382/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-primary transition-colors"
                 >
-                  linkedin.com/in/moiz-ahmed-b41799367
+                  linkedin.com/in/ryan-salah-98b538382/
                 </a>
               </div>
             </motion.div>
@@ -1324,7 +1344,7 @@ function ContactSection() {
               <span className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-primary to-blue-600 w-full"></span>
             </h4>
             <p className="text-gray-300 leading-relaxed">
-              Senior AI/ML Engineer with 10+ years of hands-on experience in Machine Learning, NLP, and Generative AI including designing ML systems, building scalable Python APIs, and deploying models and agents with robust MLOps pipelines. Combines deep AI infrastructure knowledge with full-stack capabilities to support cross-functional AI teams. Skilled in backend systems using FastAPI and Flask, and frontend dashboards using React, Tailwind, and Next.js for real-time model feedback. 
+              Senior AI/ML Engineer with 9+ years of hands-on experience in Machine Learning, NLP, and Generative AI including designing ML systems, building scalable Python APIs, and deploying models and agents with robust MLOps pipelines. Combines deep AI infrastructure knowledge with full-stack capabilities to support cross-functional AI teams. Skilled in backend systems using FastAPI and Flask, and frontend dashboards using React, Tailwind, and Next.js for real-time model feedback. 
             </p>
             <p className="text-gray-300 leading-relaxed mt-4">
               Proven success in leading model lifecycle automation, edge deployment, and cloud-native GenAI infrastructure. Strong collaborator with cross-functional teams, product stakeholders, and engineering leaders. Trusted technical advisor with success in delivering production-ready AI solutions that accelerate business innovation and reduce time-to-market.
@@ -1419,7 +1439,7 @@ function Footer() {
           </div>
           <div className="flex flex-col items-center md:items-end">
             <div className="text-sm text-gray-400 mb-2">
-              © {new Date().getFullYear()} Moiz Ahmed. All rights reserved.
+              © {new Date().getFullYear()} Ryan Salah. All rights reserved.
             </div>
             <a href="#home" className="text-primary hover:underline">
               Back to top
